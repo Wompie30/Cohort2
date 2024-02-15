@@ -79,3 +79,19 @@
 // -> Yes, by Using Asynchronous Function
 
 // Example - setTimeOut();
+
+function findSum(n){
+    let ans = 0;
+    for(let i=0; i<n; i++){
+        ans += i;
+    }
+
+    return console.log(ans);
+}
+
+function findSumTill100(){
+    return findSum(100);
+}
+
+setTimeout(findSumTill100, 2000);
+console.log("I'll run first then setTimeOut will");
