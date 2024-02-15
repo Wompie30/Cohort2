@@ -10,47 +10,47 @@
 
 
 // Problem - Write the program to greet a person give their first and last name
-// let firstName = "Vivek";
-// let lastName = "Shukla";
+let firstName = "Vivek";
+let lastName = "Shukla";
 
-// console.log("Hi, My name is " + firstName + lastName);
+console.log("Hi, My name is " + firstName + lastName);
 
 
 // Problem - Write a program that greets a person based on their gender. (if else)
 
 
 // Problem - Write a program that counts from 0 to 1000 and prints. (For-loop)
-// let sum = 0;
-// for(let i=1; i<=1000; i++){
-//     sum = sum + i;
-// }
-// console.log(sum);
+let sum = 0;
+for(let i=1; i<=1000; i++){
+    sum = sum + i;
+}
+console.log(sum);
 
 
                             // Functions
 
-// function a() {
-//     console.log("This is a");
-// }
+function a() {
+    console.log("This is a");
+}
 
-// a();
+a();
 
 // Funciton and Function Callback
-// function sum(num1, num2){
-//     let result = num1 + num2;
-//     return result;
-// }
+function sum(num1, num2){
+    let result = num1 + num2;
+    return result;
+}
 
-// function displayResult(data){
-//     console.log("Result of the sum is: " + data);
-// }
+function displayResult(data){
+    console.log("Result of the sum is: " + data);
+}
 
-// function displayResultPassive(data){
-//     console.log("Sum's Result is: " + data);
-// }
+function displayResultPassive(data){
+    console.log("Sum's Result is: " + data);
+}
 
-// let ans = sum(5,5);
-// displayResult(ans);
+let ans = sum(5,5);
+displayResult(ans);
 
 
 
@@ -58,20 +58,20 @@
 // -> You are only allowed to call one function after this
 // -> How will you display result of a sum
 
-// function sum(num1, num2, fnToCall){
-//     let result = num1 + num2;
-//     fnToCall(result);
-// }
+function sum(num1, num2, fnToCall){
+    let result = num1 + num2;
+    fnToCall(result);
+}
 
-// function displayResult(data){
-//     console.log("Result of the sum is: " + data);
-// }
+function displayResult(data){
+    console.log("Result of the sum is: " + data);
+}
 
-// function displayResultPassive(data){
-//     console.log("Sum's Result is: " + data);
-// }
+function displayResultPassive(data){
+    console.log("Sum's Result is: " + data);
+}
 
-// sum(5,5,displayResult);
+sum(5,5,displayResult);
 
                             // Asynchronous Functions
 
@@ -95,3 +95,5 @@ function findSumTill100(){
 
 setTimeout(findSumTill100, 2000);
 console.log("I'll run first then setTimeOut will");
+
+
