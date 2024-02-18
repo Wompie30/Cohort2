@@ -3,7 +3,7 @@
                 // Promises
                 // Async Await
 
-// Synchronous Function
+// Synchronous Function.
 
 function findsum(n){
     let ans = 0;
