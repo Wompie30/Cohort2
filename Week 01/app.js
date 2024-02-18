@@ -39,3 +39,5 @@
 // Some Common Async Functions Provided by Java Script Itself
 // setTimeOut() 
 // fs.readFile - to read a file from your file system
+
+// Some Common examples of inbuilt Async Functions that are provided by JavaScript itself.
