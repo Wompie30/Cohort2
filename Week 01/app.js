@@ -5,35 +5,35 @@
 
 // Synchronous Function
 
-// function findsum(n){
-//     let ans = 0;
-//     for(let i=0; i<n; i++){
-//         ans += i;
-//     }
+function findsum(n){
+    let ans = 0;
+    for(let i=0; i<n; i++){
+        ans += i;
+    }
 
-//     return ans;
-// }
+    return ans;
+}
 
-// let result = findsum(100);
-// console.log(result);
+let result = findsum(100);
+console.log(result);
 
 
 // Asynchronus Function
 
-// function findSum(n){
-//     let ans = 0;
-//     for(let i=0; i<n; i++){
-//         ans += i;
-//     }
+function findSum(n){
+    let ans = 0;
+    for(let i=0; i<n; i++){
+        ans += i;
+    }
 
-//     return ans;
-// }
+    return ans;
+}
 
-// function findSumTill100(){
-//     console.log(findSum(100));
-// }
+function findSumTill100(){
+    console.log(findSum(100));
+}
 
-// setTimeout(findSumTill100, 2000); // Task Delegated
+setTimeout(findSumTill100, 2000); // Task Delegated
 // console.log("I'll be shown first on console then the findSumTill100 will be");
 
 
@@ -44,14 +44,14 @@
 
 // Some Common examples of inbuilt Async Functions that are provided by JavaScript itself.
 
-// const fs = require("fs");
-// // File system Module
+const fs = require("fs");
+// File system Module
 
-// fs.readFile("hello.txt", "utf-8", function(err, data){
-//     console.log(data);
-// })
+fs.readFile("hello.txt", "utf-8", function(err, data){
+    console.log(data);
+})
 
-// console.log("Hello World");
+console.log("Hello World");
 
 
                             //Promises
@@ -74,8 +74,8 @@ function onDone(data){
 
 viveksReadFile().then(onDone);
 
-// At higher level promises have three states
-// => Pending, Resolve and Rejected 
+// // At higher level promises have three states
+// // => Pending, Resolve and Rejected 
 
 var d = new Promise(function(resolve){
     resolve("Promise Resolved");
@@ -86,3 +86,24 @@ function callback(){
 }
 
 d.then(callback);
+
+
+                        // Async and Await
+
+function vivekAsyncFunction(){
+    let p = new Promise(function(resolve){
+        // do some async logic here
+        setTimeout(function(){
+            resolve("Hello World");
+        }, 5000)
+    });
+    return p;
+}
+
+async function main(){
+    let val = await vivekAsyncFunction();
+    console.log("Hello! from async function");
+}
+
+main();
+console.log("Hello from Global Scope")
