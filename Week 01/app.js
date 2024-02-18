@@ -41,3 +41,12 @@
 // fs.readFile - to read a file from your file system
 
 // Some Common examples of inbuilt Async Functions that are provided by JavaScript itself.
+
+const fs = require("fs");
+// File system Module
+
+fs.readFile("hello.txt", "utf-8", function(err, data){
+    console.log(data);
+})
+
+console.log("Hello World");
