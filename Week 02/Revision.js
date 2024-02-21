@@ -64,7 +64,7 @@ myOwnSetTimeOut(function(){
 }, 5000)
 
 
-// Approach 2 - Using Promise
+// Approach 2 - Using Promise.
 
 function myOwnSetTimeOut(duration){
     let p = new Promise(function(resolve){
