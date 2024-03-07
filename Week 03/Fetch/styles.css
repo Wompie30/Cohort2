@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightpink;
+}
+
+h2{
+    color: white;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+button{
+    background-color: white;
+    padding: 18px;
+    margin: 8px;
+    border-radius: 16px;
+}
